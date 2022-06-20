@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKYO & PEARL</title>
+
+<!--스타일시트-->
+    <link rel="stylesheet" href="./css/style.css">
+
+<!--폰트어썸 아이콘 스크립트-->    
+    <script src="https://kit.fontawesome.com/b11e5da617.js" crossorigin="anonymous"></script>
+
+<!--제이쿼리 플러그인 스크립트 소스 연결 및 캐러셀 스타일시트-->    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="./js/script.js"></script>
+    
+</head>
+<body>
+<div id="wrapper">
+
+
+<!--헤더-->
+    <header>
+
+
+<!--글로벌 메뉴-->            
+        <nav id="GNB">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">My Page</a></li> 
+            </ul>
+
+
+<!--input 박스-->
+            <div id="search">
+                <input type="text" style="border: 1px solid #C6C6C6; width:130px;" placeholder=" search"> 
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+
+
+<!--로고-->        
+        <div id="logo">
+            <a href="http://kbk83354119.dothome.co.kr/tokyo&pearl/index.html" target="_blank" alt="logo"><img src="./image/logo.png" alt="도쿄앤펄 로고"></a>
+        </div>
+
+
+<!--토글 메뉴-->
+        <div id="toggle">
+        <a href="#"><img src="./image/icon/toggle.png" alt="toggle menu" style="width:24px; height:24px"></a>
+        </div>
+
+
+<!--로그인-->
+        <div id="account">
+            <a href="#"><img src="./image/icon/person_outline_black_24dp.svg" alt="login" style="width:35px; height:35px"></a>
+        </div>
+
+
+<!--로컬 메뉴-->      
+        <div id="LNB">
+            <ul> 
+                <li><a href="#">Story</a></li>
+                <li><a href="#ring">Ring</a></li>
+                <li><a href="#necklace">Necklace & Earring</a></li>
+                <li><a href="#arm">Bracelet & Etc</a></li> 
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Location</a></li> 
+            </ul>
+        </div>
+    </header>
+
+
+<!--콘텐츠-->      
+    <section id="contents">
+
+
+<!--배너(웹,태블릿,모바일)-->
+        <div id="bxslider">
+            <div id="banner">
+                <picture>
+                        <source srcset="./image/m_banner1.jpg" media="(max-width:767px)" alt="M_B1">
+                        <source srcset="./image/T_banner1.jpg" media="(max-width:1023px)" alt="T_B1">
+                        <source srcset="./image/W_banner1.jpg" media="(max-width:1920px)" alt="W_B1">
+                        <img src="./image/W_banner1.jpg" alt="배너1">
+                </picture>   
+                <picture> 
+                        <source srcset="./image/m_banner2.jpg" media="(max-width:767px)" alt="M_B2">
+                        <source srcset="./image/T_banner2.jpg" media="(max-width:1023px)" alt="T_B2">
+                        <source srcset="./image/W_banner2.jpg" media="(max-width:1920px)" alt="W_B2">
+                        <img src="./image/W_banner2.jpg" alt="배너2">
+                </picture>
+                <picture>
+                        <source srcset="./image/m_banner3.jpg" media="(max-width:767px)" alt="M_B3">
+                        <source srcset="./image/T_banner3.jpg" media="(max-width:1023px)" alt="T_B3">
+                        <source srcset="./image/W_banner3.jpg" media="(max-width:1920px)" alt="W_B3">
+                        <img src="./image/W_banner3.jpg" alt="배너3">
+                </picture>
+            </div>
+
+
+<!--size 90-->
+        <div id="contents_90">
+
+
+<!--이달의 collection-->            
+            <div id="collection_sydney">
+                <div id="scroll_bg"></div>
+                <div id="scroll_text">
+                    <h1>Design Sydney</h1>
+                </div>
+                <div id="scroll_img">
+                    <img src="./image/design.jpg" alt="diamond">
+                </div>
+                <div id="more">
+                    <a href="#"><img src="./image/icon/more.png"></a>
+                </div>
+            </div>
+
+<!--반지 BEST-->                   
+            <div id="ring">
+                <h3 class="content_text">Ring BEST</h3>
+            </div>
+            <div id="ring_img">
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring1.png" alt="반지1"></a>
+                    <span>월드타워<hr>Seoul collection</span>
+                </div>
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring2.png" alt="반지2"></a>
+                    <span>시드니 오페라하우스<hr>Sydney collection</span>
+                </div>
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring3.png" alt="반지3"></a>
+                    <span>사그라다파밀리아1<hr>Gaudi collection</span>
+                </div>
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring4.png" alt="반지4"></a>
+                    <span>섭지코지-라운드<hr>Jeju Island collection</span>
+                </div>
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring5.png" alt="반지5"></a>
+                    <span>카사밀라<hr>Gaudi collection</span>
+                </div>
+                <div class="ring_list">
+                    <a href="#"><img src="./image/best_ring6.png" alt="반지6"></a>
+                    <span>엠파이어-라운드<hr>New York collection</span>
+                </div>
+            </div>
+            <div class="more_BT"><a href="#">more</a></div>
+
+
+<!--목걸이 New & Best-->   
+            <div id="necklace">
+                <h3 class="content_text">Necklace New & Best</h3>
+            </div>
+            <div id="necklace_img">
+                <div id="New">
+                    <span><mark style="background-color:#FFEAD7">New</mark></span>
+                    <a href="#"><img src="./image/NECKLACE_3.jpg"></a>
+                    <span>꼬냑<hr>천연다이아몬드 14K,18K</span>
+                </div>
+                <div id="Best">
+                    <span><mark style="background-color:#FFEAD7">Best</mark></span>
+                    <a href="#"><img src="./image/NECKLACE_4.jpg"></a>
+                    <span>핑크골드 하트 쓰리 포인트<hr>천연다이아몬드 14K,18K</span>
+                </div>
+            </div>
+            <div class="more_BT"><a href="#">more</a></div>
+        </div>    
+
+
+<!--귀걸이 BEST & 팔찌 BEST-->      
+        <div id="ear_arm">
+            <div id="ear_arm_size">
+
+                
+<!--귀걸이 BEST-->
+                <div id="ear">
+                    <a href="#"><h3 class="content_text_left">Earring BEST</h3></a>
+                </div>
+                <div id="ear_img">
+                    <a href="#"><img src="./image/WEB_best_ear1.png"></a>
+                    <a href="#"><img src="./image/WEB_best_ear2.png"></a>
+                    <a href="#"><img src="./image/WEB_best_ear3.png"></a>
+                </div>
+
+<!--팔찌 BEST-->
+                <div id="arm">
+                    <a href="#"><h3 class="content_text_right">Bracelet BEST</h3></a>
+                </div>
+                <div id="arm_img">
+                    <a href="#"><img src="./image/WEB_BRACELET_1.png"></a>
+                    <a href="#"><img src="./image/WEB_BRACELET_2.png"></a>
+                    <a href="#"><img src="./image/WEB_BRACELET_3.png"></a>
+                </div>
+
+                <div class="eararm_BT"><a href="#">more</a></div>
+            </div>
+        </div>
+
+
+        <div id="picAyoutube">
+<!--유튜브영상-->      
+            <div id="YouTube">
+                <div class="video1">
+                    <iframe src="https://www.youtube.com/embed/rlu7JJnDVyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="V_text1">  
+                        <h2>MY FIRST diamond</h2>
+                        <p>당신은 소중합니다<br>
+                            소중한 당신의 소중한 날을 함께합니다<br>
+                            도쿄앤펄만이 가지고 있는 특별함<br>
+                            당신만을 위한 첫번째 다이아몬드,<br>
+                            도쿄앤펄입니다.</p>
+                    </div>
+                </div> 
+                <div class="video2"> 
+                    <iframe src="https://www.youtube.com/embed/QrB5ph4mW-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <div class="V_text2">
+                        <h2>TOKYO&PEARL</h2>
+                        <p>도쿄앤펄의 현재 디자인되고 있는 대부분의<br>
+                            제품은 단일공장에서 생산을 하고 있으며<br>
+                            완성도 있는 제품을 통해 오직 검증받은 제품을<br>
+                            생산하고자 노력하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!--푸터-->
+    <footer>
+        <div id="footer_text_left">
+            <a>브랜드명 : 도쿄앤펄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                사업자명 : 도쿄앤펄디자인연구소</a><br/>
+            <a>사업자등록번호 : 502-19-42769&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                통신판매업신고번호 : 제 2015-대구중구-4078호</a><br/>    
+            <a>사업장주소 : 대구광역시 중구 동성로 66 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                대표전화 : 1599-9034</a><br/>
+            <a>개인정보취급관리자 : 김지훈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                이메일 : tokyonpearl@naver.com</a><br/>
+            <a href="#"><img src="./image/icon/Facebook_icon.png"></a>
+            <a href="#"><img src="./image/icon/Naver_icon.png"></a>
+            <a href="#"><img src="./image/icon/Instagram_icon.png"></a>
+        </div>
+        <div id="footer_text_right">
+            <h3 style="color:#525254">CUSTOMER CENTER</h3><br/>
+            <hr>
+            <h3 style="color:#525254">1599-9034</h3><br/>  
+            <a>업무시간 : 10:30 ~ 19:30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                점심시간 : 12:00 ~ 13:00</a><br/>
+            <a>토,일요일,공휴일 : 10:30 ~20:00</a><br/>
+            <a>통화량이 많을때는 Q&A를 이용해주세요.</a><br/>
+        </div>
+<!--TOP버튼-->            
+        <a href="#top">TOP</a>
+    </footer>
+</div>
+
+</body>
+</html>

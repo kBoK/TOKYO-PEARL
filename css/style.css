@@ -1,0 +1,658 @@
+/*초기화*/
+* {margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ웹ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+#wrapper{
+    width:100%;
+}
+
+
+/*글로벌 메뉴*/
+#GNB{
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 85px;
+    padding-top: 20px;
+}
+#GNB ul{
+    display: flex;
+    padding-right: 40px;
+    padding-top: 4px;
+}
+#GNB ul li{
+    display: block;
+    padding: 0 10px;
+    font-size: smaller;
+}
+
+/*GNB 메뉴 구분선*/
+#GNB ul li a{
+    display: block;
+    color:#707070;
+}
+#GNB ul li a:after{
+    content: " | ";
+    float: right;
+    color: rgb(0, 0, 0);
+    margin-right: -10px;
+}
+#GNB ul li:last-of-type a:after{
+    content: " ";
+}
+
+
+/*input 박스*/
+#search {
+    position: relative;
+    left:-20px;
+}
+#search i{
+    position: absolute;
+    left:110px;
+    top:5px;
+    color: #707070;
+}
+#search ::placeholder{
+    font-size: 12px;
+    color: #cacaca;
+}
+
+
+/*로고*/
+#logo{
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+/*토글 메뉴*/
+#toggle img{
+    display: none;
+}
+
+
+/*로그인*/
+#account img{
+    display: none;
+}
+
+
+/*로컬 메뉴*/
+#LNB{
+    background-color: #FFEAD7;
+    height: 80px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+#LNB ul{
+    display: flex;
+}
+#LNB ul li{   
+    background-color: #ffffff;
+    width:320px;
+    height:50px;
+    margin-top: 15px;
+    text-align: center;
+    vertical-align: center;
+}
+#LNB ul li a {
+    display: block;
+    margin-top: 10px;
+    color:#000000;
+}
+
+
+/*콘텐츠*/
+.content_text{
+    margin: 5% 0;
+}
+
+/*배너(웹,태블릿,모바일)*/
+#banner img{
+    background-size: cover;
+}
+
+
+/*size 90*/
+#contents_90 {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*이달의 collection*/
+#collection_sydney{
+    margin-top: 10%;
+    margin-bottom: 15%;
+    position: relative;
+}
+#collection_sydney #scroll_bg {
+    background: url("../image/Sydney.jpg") no-repeat fixed center;
+    width: 80%;
+    height: 600px;
+    background-size: cover;
+    margin: 0 auto;
+}
+#collection_sydney #scroll_text{
+    position: absolute;
+    z-index: 2;
+    top:43%;
+    margin:0 33%;
+}
+#collection_sydney #scroll_text h1{
+    font-size: 4.5vmax;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+#collection_sydney #scroll_img img{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    z-index: 555;
+    top:75%;
+    right: 0%;
+    animation: slide 3s ease-out forwards;
+}
+@keyframes slide{
+    from{
+        right: -500px;
+        opacity: 0;
+    }
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+}
+#collection_sydney #more{
+    position: absolute;
+    top:55%;
+    right: 23%;
+}
+
+
+/*반지 BEST*/
+#contents_90 #ring_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contents_90 #ring_img img:hover{
+    opacity: 0.6;
+}
+#ring_img span{
+    background-color: rgb(252, 249, 249);
+    display: block;
+    text-align: center;
+    font-family:sans-serif;
+    padding-top: 5px;
+    padding-bottom : 5px;
+    line-height: 25px;
+}
+.more_BT{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    left: 48%;
+    margin: 10% 0;
+}
+.more_BT a{
+    display: block;
+    color: white;
+}
+
+
+/*목걸이 New & Best*/   
+#contents_90 #necklace_img{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+#contents_90 #necklace_img img{
+    width: 100%;
+}
+#contents_90 #necklace_img img:hover{
+    opacity: 0.7;
+}
+#New span:first-of-type{
+    display: block;
+    margin-bottom: 60px;
+    font-size: 1.2em;
+    text-align:start;
+}
+#Best span:first-of-type{
+    display: block;
+    margin-bottom: 60px;
+    font-size: 1.2em;
+    text-align:start;
+}
+#necklace_img span:last-of-type{
+    background-color: rgb(252, 249, 249);
+    display: block;
+    text-align: center;
+    font-family:sans-serif;
+    padding-top: 5px;
+    padding-bottom : 5px;
+    line-height: 25px;
+}
+
+/*귀걸이 BEST & 팔찌 BEST*/
+#ear_arm {
+    background-color: #E8C7BA;
+    height: auto;
+    }
+#ear_arm_size {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.eararm_BT{
+    position: absolute;
+    left: 48%;
+    bottom: 3%;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.eararm_BT a{
+    display: block;
+    color: black;
+}
+
+/*귀걸이 BEST*/
+#ear {
+    display: flex;
+}
+#ear h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#ear_img{
+    display: flex;
+}
+#ear_img img{
+    width: 95%;
+}
+#ear_arm #ear_img img:hover{
+    opacity: 0.7;
+}
+
+
+/*팔찌 BEST*/
+#arm {
+    display: flex;
+    justify-content: end;
+}
+#arm h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#arm_img{
+    display: flex;
+    justify-content: end;
+}
+#arm_img img{
+    width: 95%;
+    margin-bottom: 150px;
+}
+#ear_arm #arm_img img:hover{
+    opacity: 0.7;
+}
+
+/*사진&유튜브*/
+#picAyoutube{
+    display: flex;
+    justify-content:center;
+    background-color: #f7f1f1;
+}
+/*유튜브영상*/
+#YouTube iframe{
+    width:750px;
+    height:300px; 
+    margin: 10% 5%;
+}
+#YouTube h2{
+    margin-bottom: 10%;
+}
+#YouTube p{
+    margin-bottom: 3%;
+}
+#YouTube .video1{
+     margin: 0 auto;
+     display: flex;
+     margin-left: 3%;
+}
+#YouTube .V_text1{
+    margin: 17% 5%;
+}
+#YouTube .video2{
+    margin: 0 auto;
+    display: flex;
+    margin-left: 3%;
+}
+#YouTube .V_text2{
+    margin: 17% 5%;
+}
+
+
+/*푸터*/
+footer{
+    background-color: #FFEAD7;
+    display: flex;
+    justify-content: center;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+/*TOP버튼*/
+footer > a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #E9EAE5;
+    color:#000000;
+    border-radius: 30px;
+    float: right;
+    padding: 5px;
+    position: fixed;
+    right: 2%;
+    bottom:5%;
+    z-index: 999;
+}
+footer > a:hover {
+    background-color: #e09374;
+    color: white;
+}
+/*푸터 왼쪽*/
+#footer_text_left{
+    width: 30%;
+    margin: auto;
+}
+#footer_text_left a{
+    line-height: 40px;
+    color: #525254;
+}
+#footer_text_left a img{
+    margin-top: 20px;
+    margin-right: 30px;
+}
+/*푸터 오른쪽*/
+#footer_text_right{
+    width: 30%;
+    margin: auto;
+}
+#footer_text_right a{
+    line-height: 30px;
+    color:#525254;
+}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ태블릿ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media screen and (min-width:768px) and (max-width:1023px){
+/*글로벌 메뉴*/
+    #GNB{
+        position: relative;
+        padding-top: 20px;
+    }
+    #GNB ul{
+        position: absolute;
+        padding-right: 0;
+        right: 20px;
+    }
+
+/*input 박스*/
+    #search{
+        top:35px;
+        left:60px;
+    }
+
+/*로고*/
+    #logo{
+        text-align: left;
+        padding-left: 80px;
+    }   
+
+/*로컬 메뉴*/
+    #LNB{
+        background-color: #FFEAD7;
+        height:150px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+    #LNB ul{
+        display:block;
+    }
+    #LNB ul li{
+        width:33.33333%;
+        float: left;
+    }
+
+/*콘텐츠*/
+
+/*이달의 collection*/
+#collection_sydney #scroll_img img{
+    top:80%;
+    width: 40%;
+}
+
+/*목걸이 New & Best*/
+#New{
+    margin-bottom: 15%;
+}
+
+/*귀걸이 BEST & 팔찌 BEST*/
+#contents_90 #necklace_img{
+    flex-direction: column;
+    position: relative;
+}
+#necklace_img #New{
+    margin: 0 auto;
+    width: 80%;
+}
+#necklace_img #Best{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 10%;
+}
+/*사진&유튜브*/
+#picAyoutube{
+    display: flex;
+    flex-direction: column;
+}
+/*굿디자인*/
+    #GD img{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+/*유튜브영상*/
+    #YouTube iframe{
+        display: block;
+        margin: auto;        
+        margin-bottom: 100px;
+    }
+/*푸터*/
+    footer{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+/*푸터 왼쪽*/
+    #footer_text_left{
+        width: 40%;
+    }
+/*푸터 오른쪽*/
+    #footer_text_right{
+        width: 40%;
+    }
+}
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ모바일ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+@media screen and (max-width:767px){
+/*글로벌 메뉴*/
+    #GNB ul{
+        display: none;
+    }
+/*input 박스*/
+    #search{
+        display: none;
+    }
+/*로고*/
+    #logo img{
+        text-align: center;
+    }
+/*토글 메뉴*/
+    #toggle img{
+        display: block;
+        position: absolute;
+        top:80px;
+        margin-left: 20px;
+    }
+/*로그인*/
+    #account img{
+        display: block;
+        position: absolute;
+        top:75px;
+        right: 20px;
+    }
+/*로컬 메뉴*/
+    #LNB{
+        background-color: white;
+        height:auto;
+    }
+    #LNB ul{
+        display: none;
+    }
+    #LNB > ul > li {
+        width: 100%;
+        text-align:  center;
+        background-color: #FFEAD7;
+        margin: 0%;
+        border: 1px solid white;
+    }
+    #LNB ul.active{
+        display: flex;
+        flex-direction: column;
+    }
+/*콘텐츠*/
+    #collection_sydney #more img{
+        width: 70%;
+        height: 70%;
+    }
+    #more img{
+        margin-top: 15px;
+    }
+/*반지 BEST*/
+    #contents_90 #ring_img{
+        display: flex;
+        flex-direction: column;
+    }
+    #contents_90 #ring_img img{
+        width: 100%;
+    }
+    #ring_img span{
+        position: relative;
+    }
+    .more_BT{
+        left: 43%;
+    }
+/* 목걸이 */
+    #Best span:first-of-type{
+        margin-top:30px;
+    }
+/*귀걸이 BEST & 팔찌 BEST*/
+    #ear_arm {
+        background-color: #ffffff;
+        }
+    #ear_arm_size {
+        width: 100%; 
+        height: auto;
+        display: flex;
+        }
+/*귀걸이 BEST*/
+    #ear {background-color: #E8C7BA;
+        width: 50%;
+        display: block;
+        text-align: center;
+    }
+    #ear h3 {
+        color:rgb(21, 21, 21);
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    #arm h3 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    #ear_img{
+        display: none;
+    }
+/*팔찌 BEST*/
+    #arm {background-color: #e8c7babb;
+        width: 50%;
+        display: block;
+        text-align: center;
+    }
+    #arm h3 {
+        color:rgb(21, 21, 21);
+    }
+    #arm_img{
+        display: none;
+    }
+    .eararm_BT{display: none;}
+/*유튜브영상*/
+    #YouTube iframe{
+        width:350px;
+        height:300px; 
+        margin: 10% 0;
+    }
+    #YouTube{
+        position: relative;
+        width: 100%;
+    }
+    #YouTube .video1{
+        margin-left: 15%;
+        flex-direction: column;
+    }
+    #YouTube .V_text1{
+        margin: 0%;
+        margin-left: 10%;
+    }
+    #YouTube .video2{
+        margin-left: 15%;
+        flex-direction: column;
+    }
+    #YouTube .V_text2{
+        margin: 0%;
+        margin-left: 10%;
+    }
+    #YouTube .V_text2 p{
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15%;
+    }
+/*푸터*/
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+/*푸터 오른쪽*/
+    #footer_text_right{
+        width: 80%;
+        margin-top: 50px;
+    }
+    #footer_text_right a{
+        line-height: 30px;
+        color:#525254;
+    }
+/*푸터 왼쪽*/
+    #footer_text_left{
+        width: 80%;
+        margin-top: 40px;
+    }
+}
